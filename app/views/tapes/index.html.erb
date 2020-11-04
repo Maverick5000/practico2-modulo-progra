@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Peliculas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Codigo</th>
+      <th>Director</th>
+      <th>Disponible?</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tapes.each do |tape| %>
+      <tr>
+        <td><%= tape.name %></td>
+        <td><%= tape.code %></td>
+        <td><%= tape.director.name %></td>
+        <td><%= tape.available %></td>
+        <td><%= link_to 'Ver', tape %></td>
+        <td><%= link_to 'Editar', edit_tape_path(tape) %></td>
+        <td><%= link_to 'Borrar', tape, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tape', new_tape_path %>

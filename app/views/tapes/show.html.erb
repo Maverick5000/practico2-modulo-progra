@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tape.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @tape.code %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @tape.director.name %>
+</p>
+
+<strong>Genres:</strong>
+<ul>
+<% @tape.genres.each do |genre| %>
+  <li> <%= genre.name %> </li>
+<% end %>
+</ul>
+
+<strong>Actors:</strong>
+<ul>
+<% @tape.actors.each do |actor| %>
+  <li> <%= actor.name %> </li>
+<% end %>
+</ul>
+
+<%= link_to 'Editar', edit_tape_path(@tape) %> |
+<%= link_to 'Back', tapes_path %>

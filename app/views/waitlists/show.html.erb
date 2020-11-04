@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tape:</strong>
+  <%= @waitlist.tape_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @waitlist.client_id %>
+</p>
+
+<%= link_to 'Editar', edit_waitlist_path(@waitlist) %> |
+<%= link_to 'Back', waitlists_path %>

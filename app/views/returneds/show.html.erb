@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tape:</strong>
+  <%= @returned.tape.name %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @returned.client.name %>
+</p>
+
+<%= link_to 'Editar', edit_returned_path(@returned) %> |
+<%= link_to 'Back', returneds_path %>

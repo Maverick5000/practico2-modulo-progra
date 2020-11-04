@@ -1,0 +1,12 @@
+<%= semantic_form_for @tape do |f| %>
+    <%= f.inputs do %>
+      <%= f.input :name %>
+      <%= f.input :director, :as => :select %>
+      <%= f.input :genres, :as => :select, :multiple => true %>
+      <%= f.input :actors, :as => :select, :input_html => { :multiple => true } %>
+    <% end %>
+    <%= f.actions do %>
+      <%= f.action :submit, :as => :button %>
+      <%= f.action :cancel, :as => :link %>
+    <% end %>
+  <% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tape:</strong>
+  <%= @rented.tape.name %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @rented.client.name %>
+</p>
+
+<%= link_to 'Editar', edit_rented_path(@rented) %> |
+<%= link_to 'Back', renteds_path %>
