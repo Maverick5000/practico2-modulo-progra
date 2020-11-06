@@ -1,5 +1,10 @@
 # PRACTICO #2
 
+# DIAGRAMA
+
+
+![alt text](https://github.com/Maverick5000/practico2-modulo-progra/blob/master/diagrama.jpeg?raw=true)
+
 Pasos:
 
 - Ruby version => 2.6.3
