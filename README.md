@@ -8,7 +8,7 @@ Pasos:
 
 - Dentro del directorio del proyecto correr => bundle
 
-- Crear base de datos => rails db:create db:migrate
+- Crear base de datos => rails db:create db:migrate db:seed
 
 - Correr server => rails server
 
