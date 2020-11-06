@@ -4,7 +4,7 @@ Pasos:
 
 - Ruby version => 2.6.3
 
-- Dentro del directorio del proyecto correr => gem install bundle
+- Dentro del directorio del proyecto correr => gem install bundler
 
 - Dentro del directorio del proyecto correr => bundle
 
